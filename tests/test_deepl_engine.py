@@ -8,7 +8,7 @@ class TestDeepL(unittest.TestCase):
     def test_translation(self):
         self.deepl = DeepLEngine('en', 'de')
         translation = self.deepl.translate("hello, world!")
-        self.assertEqual("Hallo, Welt!", translation)
+        self.assertEqual("hallo, Welt!", translation)
 
 
 if __name__ == '__main__':
